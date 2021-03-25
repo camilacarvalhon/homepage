@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>bolosconfeitados</title>
+		<meta charset="utf-8"/>
+		<meta name="author" content="Camila"/>
+		<meta name="keywords" content="delicias,bolos confeitados,sabores,diverficação"/>
+		<meta name="discription" content="Bolos confeitados"/>
+        <link rel="stylesheet" type="text/css" href="estilo.css"/>
+
+	</head>
+	<body>
+        <nav>
+            <a class="a-menu" href="#"> HOME </a>   
+            <a class="a-menu" href="#pag-sobre"> SOBRE </a> 
+            <a class="a-menu" href="#pag-recheios"> RECHEIOS </a>   
+            <a class="a-menu" href="#pag-encomendas"> ENCOMENDAS </a>
+        </nav>
+        <header>
+		    <img src="img/img1.png" alt-="banner contendo a logo de bolos confeitados" >
+	    </header>
+		
+        <article id="pag-sobre">
+			<h1>Bolos Confeitados</h1>
+    		  <p>Os <strong><span id="txt-preto">Bolos confeitados</span></strong> são feitos com amor e carinho.</p>
+    		  <p>Teve sua origem em casa e está desenvolvendo-se de forma excepcional. </p>
+    		  <p>Foi desenvolvido pela confeiteira <em>Val Ribeiro.</em></p>
+    	</article>
+
+    	<section id="pag-recheios">
+    		<h2>Recheios</h2>
+    	        <p> Os<strong> Recheios</strong> dos bolos mais pedidos no momento, são:</p>
+            <div id="container">
+                <div class="card">
+                    <img  src="img/maracuja.jpg"  alt="imagem ilustrativa">
+                    <div class="card-content">
+                        <h3>Recheio de Mousse de maracujá</h3>
+                        <p>Bolo: 1 kl R$49,90 + valor variação de recheio</p>  
+                    </div>
+                </div>
+                <div class="card">
+                    <img  src="img/cremeabacaxi.png" alt="imagem ilustrativa">
+                    <div class="card-content">
+                        <h3>Recheio de Creme de abacaxi</h3>
+                        <p>Bolo: 1 kl R$49,90 + valor variação de recheio</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img  src="img/docedeleite.png" alt="imagem ilustrativa">
+                    <div class="card-content">
+                        <h3>Recheio de Doce de leite </h3>
+                        <p>Bolo: 1 kl R$49,90 + valor variação de recheio</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/cincoleites.png" alt="imagem ilustrativa">
+                    <div class="card-content">
+                        <h3>Recheio Cinco leites</h3>
+                        <p>Bolo: 1 kl R$49,90 + valor variação de recheio</p>
+                    </div>
+                </div>
+            </div>
+        </section> 
+        <section id="pag-encomendas">
+
+            <h1>Encomendas</h1>
+              <p>Encomende seu bolo preenchendo o formulário abaixo!</p> 
+
+            <form  name=""  method="" action="">
+
+                <label for="nome">Nome:</label>
+                <input id="nome"  type="text" name="nome"  placeholder="Nome"  required />
+
+
+                <label for="email">E-mail:</label>
+                <input id="email" type="email" name="email" placeholder="nomeusuario@email.com" />
+
+
+                <label for="celular">Celular:</label>
+                <input id="celular"   type="tel" name="celular" placeholder="(99)99999-9999" pattern="^\(?\d{2}\)\d{5}[-\s]\d{4}.*?$"/>
+
+                <div id="data-horario-num">
+                    <div>
+                        <label for="data">Data:</label>
+                        <input id="data"  type="date" name="data"/>
+                    </div>
+                    <div>
+                        <label for="quantidade">Quantidade:</label>
+                        <input id="quantidade"  type="number" name="quantidade" min="1" max=""/>
+                    </div>
+                </div>
+
+                <label for="recheio">Recheio:</label>
+                <select id="recheio" name="recheio">
+                    <option value="">Selecione</option>
+                    <option value="cincoleites">Cinco leites</option>
+                    <option value="chocolate">Chocolate</option>
+                    <option value="cremedeabacaxi">Creme de abacaxi</option>
+                    <option value="docedeleite">Doce de leite</option>
+                    <option value="moussedemaracuja">Mousse de maracujá</option>
+                </select>
+
+                <fieldset>
+                    <legend>Forma de retirada:</legend>  
+                    <input id="sim" type="radio" name="teraalgumtemaespecifico"/><label for="sim"> Delivery </label></br>
+                    <input id="nao" type="radio" name="teraalgumtemaespecifico"/><label for="nao"> Retirada no local </label>
+                    </br>
+                </fieldset>
+
+                <label for="msg">Mensagem:</label>
+                <textarea id="msg" cols="54" rows="4"></textarea>
+
+                <div id="botoes-form">  
+                    <input type="submit" name="bnt-encomenda" value="ENCOMENDAR" />
+                    <input type="reset" name="bnt-cancelar" value="CANCELAR"/>
+                </div>
+
+            </form>
+       </section> 
+       <footer>           
+            <p> Desenvolvido por<a href="http://instagram.com/mylan_carvalho" target="_blank"> Camila Carvalho </a> - 2020 
+            </p>
+       </footer>               
+</html>
