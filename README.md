@@ -1,3 +1,3 @@
-# HomePage
+# homePage
 
 Desenvolvida durantes as aulas de Construção de Páginas para Internet I
